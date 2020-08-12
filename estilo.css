@@ -1,0 +1,88 @@
+*{
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #ffffff, #eaeaea, #d6d6d6, #c2c2c2, #aeaeae);
+    margin: 0;
+}
+nav{
+    margin: 0;
+    background-image: linear-gradient(to right, #1600ff, #0079ff, #00a5ff, #00c7da, #00e2ad, #4fe183, #7fdc52, #acd400, #d0b300, #ea8c00, #fb5c00, #ff0037);
+    height: 75px;
+}
+nav h1{
+    margin: 0;
+    color:whitesmoke;
+    background-color: black;
+    padding: 20px;
+}
+main{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cronometro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    position:relative;
+}
+.message{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    
+}
+#Display{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;    
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes start-count{
+    from{
+        padding: 30px;
+         
+    }
+    50%{
+        padding: 0px;
+        background-color:rgba(10,200,100,.5); 
+    }
+    to{
+        padding: 30px;
+        
+    }
+}
+@keyframes stop-count{
+    from{
+        padding: 30px;
+         
+    }
+    50%{
+        padding: 0px;
+        background-color:rgba(10,100,200,.5); 
+    }
+    to{
+        padding: 30px;
+        
+    }
+}
+#Display span{
+    transition: all 50ms;
+    font-size: 60px;
+ 
+}
